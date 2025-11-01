@@ -163,7 +163,7 @@ const interstitials = {
     },
     5: {
         a: `<div class="interstitial"><h2>you are my home.</h2><p>alw fun to just chill at home w my pooks</p><video src="images/house.MOV" muted autoplay playsinline loop style="max-width:100%;border-radius:8px"></video></div>`,
-        b: `<div class="interstitial"><h2>i love seeing the world with you!</h2><p>THROWBACK TO KL!</p><video src="images/kl.MOV" muted autoplay playsinline loop style="max-width:100%;border-radius:8px"></video></div>`
+        b: `<div class="interstitial"><h2>i love seeing the world with you!</h2><p>THROWBACK TO OUR FIRST KOR TRIP!</p><img src="images/snow.jpg" alt="snow.jpg"></div>`
     },
     6: {
         a: `<div class="interstitial"><h2>THROWBACK TO LISTENING TO THIS IN WUSHU ROOM 🗣️</h2><p>thank you for intro-ing this to me hehe</p><audio id="interstitial-audio" src="audio/walkedthruhell.mp3" preload="auto"></audio></div>`,
