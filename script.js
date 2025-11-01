@@ -163,7 +163,7 @@ const interstitials = {
     },
     5: {
         a: `<div class="interstitial"><h2>you are my home.</h2><p>alw fun to just chill at home w my pooks</p><video src="images/house.MOV" muted autoplay playsinline loop style="max-width:100%;border-radius:8px"></video></div>`,
-        b: `<div class="interstitial"><h2>i love seeing the world with you!</h2><p>THROWBACK TO our first korea trip!</p><img src="images/snow.jpg" alt="snow.jpg"></div>`,
+        b: `<div class="interstitial"><h2>i love seeing the world with you!</h2><p>THROWBACK TO KL!</p><video src="images/kl.MOV" muted autoplay playsinline loop style="max-width:100%;border-radius:8px"></video></div>`
     },
     6: {
         a: `<div class="interstitial"><h2>THROWBACK TO LISTENING TO THIS IN WUSHU ROOM 🗣️</h2><p>thank you for intro-ing this to me hehe</p><audio id="interstitial-audio" src="audio/walkedthruhell.mp3" preload="auto"></audio></div>`,
@@ -182,12 +182,12 @@ const interstitials = {
         c: `<div class="interstitial"><h2>my motivation</h2><p>thank you for always being my main source of motivation and for pushing me to be a better version of myself</p><img src="images/motivation.JPG" alt="motivation.jpg"></div>`,
     },
     9: {
-        a: `<div class="interstitial"><h2>throwback to some of your funny, cutesy moments no. 1</h2><p><img src="images/pabo1.jpg" alt="ivp"></div>`,
-        b: `<div class="interstitial"><h2>throwback to some of your funny, cutesy moments no. 2</h2><p>HAHAHAHAHA</p><img src="images/pabo2.jpg" alt="ivp"></div>`,
-        c: `<div class="interstitial"><h2>throwback to some of your funny, cutesy moments no. 3</h2><p>you are so funny</p><img src="images/pabo3.jpg" alt="ivp"></div>`,
+        a: `<div class="interstitial"><h2>throwback to some of your funny, cutesy moments no. 1</h2><p><img src="images/pabo1.jpg" alt="pabo1"></div>`,
+        b: `<div class="interstitial"><h2>throwback to some of your funny, cutesy moments no. 2</h2><p>HAHAHAHAHA</p><img src="images/pabo2.jpg" alt="pabo2"></div>`,
+        c: `<div class="interstitial"><h2>throwback to some of your funny, cutesy moments no. 3</h2><p>you are so funny</p><img src="images/pabo3.jpg" alt="pabo3"></div>`,
     },
     10: {
-        a: `<div class="interstitial"><h2>will nvr forget the first day we met...</h2><p><img src="images/met.jpg" alt="ivp"></div>`,
+        a: `<div class="interstitial"><h2>will nvr forget the first day we met...</h2><p><img src="images/met.JPG" alt="ivp"></div>`,
         b: `<div class="interstitial"><h2>when you asked me to be your girlfriend</h2><p>and i said yes!</p><img src="images/gf.jpg" alt="ivp"></div>`,
         c: `<div class="interstitial"><h2>our first proper overseas trip just the two of us!</h2><p></p><video src="images/lotte.MP4" muted autoplay playsinline loop style="max-width:100%;border-radius:8px"></video></div>`,
     }
