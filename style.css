@@ -1,0 +1,228 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0e6f6;
+    color: #333;
+    margin: 0;
+}
+
+.quiz-container {
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #cc00cc;
+}
+
+.question {
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+.answers {
+    display: flex;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 0.6rem;
+}
+
+.answers .answer-option {
+    /* two-per-row layout on wider screens, responsive down to single column */
+    flex: 1 1 45%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0.9em;
+    border: 1px solid #ffe6ff;
+    border-radius: 8px;
+    background: #fbf8ff;
+    cursor: pointer;
+    transition: transform 0.08s ease, box-shadow 0.08s ease;
+    text-align: left;
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.answers .answer-option:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(106, 13, 173, 0.06);
+}
+
+.answers input[type="radio"] {
+    display: none;
+}
+
+/* Modern selector to style a label that contains a checked input. */
+/* :has() is supported in modern browsers (Chrome, Edge, Safari). */
+.answer-option:has(input[type="radio"]:checked) {
+    background: #ffb3ff;
+    border-color: #cc00cc;
+    color: #333;
+}
+
+/* Fallback visual cue for older browsers: style the radio itself when checked. */
+.answer-option input[type="radio"]:checked {
+    outline: 2px solid #ff99ff;
+}
+
+#submit {
+    margin-top: 1.5em;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    color: white;
+    background-color: #fa61de;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: #b486a7;
+}
+
+#result {
+    margin-top: 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #cc00cc;
+}
+
+/* Result image styling */
+.result-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0.75em auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Navigation and progress */
+.progress {
+    margin-top: 1em;
+    font-size: 0.95em;
+    color: #666;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 0.75em;
+    margin-top: 1em;
+}
+
+.nav button {
+    padding: 0.6em 1em;
+    font-size: 1em;
+    border-radius: 6px;
+    border: 1px solid #cc00cc90;
+    background: #fff;
+    color: #cc00cc90;
+    cursor: pointer;
+    transition: all 0.18s ease;
+}
+
+.nav button:hover:not(:disabled) {
+    background: #f6e8ff;
+}
+
+.nav button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Improve spacing and readable fonts */
+h1 {
+    margin: 0 0 0.5em 0;
+}
+
+.question {
+    font-size: 1.15rem;
+    margin: 0.75em 0;
+}
+
+/* Image and animation helpers inside choices */
+.answer-option img {
+    /* fixed width with a consistent aspect ratio so images are cropped uniformly */
+    width: 120px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover; /* preserves fill while cropping excess */
+    border-radius: 6px;
+    flex-shrink: 0;
+    display: block;
+}
+
+/* Interstitial images should be larger and responsive */
+.interstitial img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.75em auto;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.answer-option .answer-text {
+    display: block;
+}
+
+/* Simple pulse animation you can toggle with the class .pulse */
+.pulse {
+    animation: pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+    100% { transform: scale(1); }
+}
+
+/* Make choices single-column on very small screens */
+@media (max-width: 520px) {
+    .answers .answer-option {
+        flex-basis: 100%;
+    }
+    .answer-option img {
+        width: 100px;
+        height: 64px;
+    }
+}
+
+/* Make sure the quiz container stays centered on small screens */
+@media (max-width: 420px) {
+    .quiz-container {
+        padding: 1rem;
+        width: 94%;
+    }
+}
+
+.interstitial video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.75em auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.interstitial audio { max-width:100%; display:block; margin:0.75em auto; }
+.audio-play-fallback {
+  display:inline-block;
+  margin-top:0.5em;
+  padding:0.5em 0.9em;
+  border-radius:6px;
+  background:#6a0dad; color:#fff; border:none;
+  cursor:pointer;
+}
