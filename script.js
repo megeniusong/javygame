@@ -187,7 +187,7 @@ const interstitials = {
         c: `<div class="interstitial"><h2>throwback to some of your funny, cutesy moments no. 3</h2><p>you are so funny</p><img src="images/pabo3.jpg" alt="pabo3"></div>`,
     },
     10: {
-        a: `<div class="interstitial"><h2>will nvr forget the first day we met...</h2><p><img src="images/met.JPG" alt="ivp"></div>`,
+        a: `<div class="interstitial"><h2>will nvr forget the first day we met...</h2><p><img src="images/met.jpg" alt="ivp"></div>`,
         b: `<div class="interstitial"><h2>when you asked me to be your girlfriend</h2><p>and i said yes!</p><img src="images/gf.jpg" alt="ivp"></div>`,
         c: `<div class="interstitial"><h2>our first proper overseas trip just the two of us!</h2><p></p><video src="images/lotte.MP4" muted autoplay playsinline loop style="max-width:100%;border-radius:8px"></video></div>`,
     }
