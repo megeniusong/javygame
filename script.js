@@ -178,7 +178,7 @@ const interstitials = {
     },
     8: {
         a: `<div class="interstitial"><h2>thank you for trying new things with me...</h2><p>even though you may be very scared or apprenhensive bout it, in the end you still do it tgt with me!</p><img src="images/coaster.jpg" alt="ivp"></div>`,
-        b: `<div class="interstitial"><h2>thank you for never being afraid to show me off...</h2><p>for doing the most and letting everyone know you're mine and i'm yours :D</p><video src="images/promlift.mov" muted autoplay playsinline loop style="max-width:100%;border-radius:8px"></video></div>`,
+        b: `<div class="interstitial"><h2>thank you for never being afraid to show me off...</h2><p>for doing the most and letting everyone know you're mine and i'm yours :D</p><video src="images/promlift.mp4" muted autoplay playsinline loop style="max-width:100%;border-radius:8px"></video></div>`,
         c: `<div class="interstitial"><h2>my motivation</h2><p>thank you for always being my main source of motivation and for pushing me to be a better version of myself</p><img src="images/motivation.JPG" alt="motivation.jpg"></div>`,
     },
     9: {
